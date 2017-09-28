@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.administrator.mysaleprogressview.ui.MainActivity">
+    <com.example.administrator.mysaleprogressview.view.MySaleProgressView
+        android:id="@+id/sale_progress"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        app:nearOverText="@string/nearOverText"
+        app:overText = "@string/overText"
+        android:layout_centerInParent="true"/>
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_below="@+id/sale_progress"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:max="100"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
